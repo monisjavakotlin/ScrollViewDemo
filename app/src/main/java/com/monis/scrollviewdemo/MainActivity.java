@@ -83,18 +83,17 @@ public class MainActivity extends AppCompatActivity {
         image6.add(R.drawable.home);
         image6.add(R.drawable.home);*/
 
-        int[] image1 = {R.drawable.cat1, R.drawable.cat2, R.drawable.cat4, R.drawable.cat6,
-                R.drawable.cat7, R.drawable.cat8, R.drawable.cat9, R.drawable.cat10};
-        int[] image2 = {R.drawable.cat11, R.drawable.cat12, R.drawable.cat13, R.drawable.cat14,
-                R.drawable.cat15, R.drawable.cat16, R.drawable.cat17, R.drawable.cat18};
-        int[] image3 = {R.drawable.cat19, R.drawable.cat21, R.drawable.cat22, R.drawable.cat26,
-                R.drawable.cat27, R.drawable.cat28, R.drawable.cat29, R.drawable.cat30};
-        int[] image4 = {R.drawable.cat32, R.drawable.cat35, R.drawable.cat36, R.drawable.cat37,
-                R.drawable.cat38, R.drawable.cat39, R.drawable.cat40, R.drawable.cat42};
-        int[] image5 = {R.drawable.cat43, R.drawable.cat44, R.drawable.cat38, R.drawable.cat32,
-                R.drawable.cat17, R.drawable.cat12, R.drawable.cat9, R.drawable.cat27};
-        int[] image6 = {R.drawable.cat4, R.drawable.cat30, R.drawable.cat16, R.drawable.cat2,
-                R.drawable.cat11, R.drawable.cat35, R.drawable.cat40, R.drawable.cat9};
+        int[] image1 = {R.drawable.cat1, R.drawable.cat2, R.drawable.cat3, R.drawable.cat4,
+                R.drawable.cat5, R.drawable.cat6, R.drawable.cat7, R.drawable.cat8};
+        int[] image2 = {R.drawable.cat9, R.drawable.cat10, R.drawable.cat11, R.drawable.cat12,
+                R.drawable.cat13, R.drawable.cat14, R.drawable.cat15, R.drawable.cat16};
+        int[] image3 = {R.drawable.cat17, R.drawable.cat18, R.drawable.cat19, R.drawable.cat20,
+                R.drawable.cat21, R.drawable.cat22, R.drawable.cat23, R.drawable.cat24};
+        int[] image4 = {R.drawable.cat25, R.drawable.cat26, R.drawable.cat27, R.drawable.cat28,
+                R.drawable.cat29, R.drawable.cat30, R.drawable.cat31, R.drawable.cat32};
+        int[] image5 = {R.drawable.cat39, R.drawable.cat34, R.drawable.cat35, R.drawable.cat36,
+                R.drawable.cat37, R.drawable.cat38, R.drawable.cat40, R.drawable.cat41};
+        int[] image6 = {R.drawable.cat42, R.drawable.cat43, R.drawable.cat44};
 
 
         myCollections.add(new MyCollection(image1, "Collection1"));
