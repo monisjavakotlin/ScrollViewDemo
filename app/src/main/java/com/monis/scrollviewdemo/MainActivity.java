@@ -1,5 +1,6 @@
 package com.monis.scrollviewdemo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -14,11 +15,7 @@ import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
 
-    private HorizontalScrollView scrollView;
-    private LinearLayout linearLayout;
-    private ImageView tvImage;
-
-    @Override
+     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -33,30 +30,7 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-
-        findViews();
-    }
-
-    private void findViews() {
-        tvImage = findViewById(R.id.tvImage);
-        scrollView = findViewById(R.id.scrollView);
-        linearLayout = findViewById(R.id.linearLayout);
-    }
-
-    public void onAddClick(View view) {
-        int[] images = {R.drawable.home, R.drawable.lake, R.drawable.home, R.drawable.lake,
-                R.drawable.home, R.drawable.lake, R.drawable.home, R.drawable.lake};
-        for(int image : images) {
-            ImageView imageView = new ImageView(this);
-            imageView.setImageResource(image);
-            linearLayout.addView(imageView,300,300);
-            scrollView.post(new Runnable() {
-                @Override
-                public void run() {
-                    scrollView.fullScroll(View.FOCUS_DOWN);
-                }
-            });
-        }
+        startActivity(new Intent(this,ShowActivity.class));
     }
 
     @Override
