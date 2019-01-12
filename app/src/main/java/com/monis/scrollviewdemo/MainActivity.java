@@ -15,11 +15,8 @@ import android.widget.LinearLayout;
 public class MainActivity extends AppCompatActivity {
 
     private HorizontalScrollView scrollView;
-    private HorizontalScrollView scrollView1;
     private LinearLayout linearLayout;
-    private LinearLayout linearLayout1;
     private ImageView tvImage;
-    private ImageView tvImage1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,33 +39,18 @@ public class MainActivity extends AppCompatActivity {
 
     private void findViews() {
         tvImage = findViewById(R.id.tvImage);
-        tvImage1 = findViewById(R.id.tvImage1);
         scrollView = findViewById(R.id.scrollView);
-        scrollView1 = findViewById(R.id.scrollView1);
         linearLayout = findViewById(R.id.linearLayout);
-        linearLayout1 = findViewById(R.id.linearLayout1);
     }
 
     public void onAddClick(View view) {
-        ImageView imageView = new ImageView(this);
-        imageView.setImageResource(R.drawable.home);
-        linearLayout.addView(imageView);
-        scrollView.post(new Runnable() {
-            @Override
-            public void run() {
-                scrollView.fullScroll(View.FOCUS_DOWN);
-            }
-        });
-    }
-
-    public void onAddClick1(View view) {
         int[] images = {R.drawable.home, R.drawable.lake, R.drawable.home, R.drawable.lake,
-                             R.drawable.home, R.drawable.lake, R.drawable.home, R.drawable.lake};
-        for (int image : images) {
+                R.drawable.home, R.drawable.lake, R.drawable.home, R.drawable.lake};
+        for(int image : images) {
             ImageView imageView = new ImageView(this);
             imageView.setImageResource(image);
-            linearLayout1.addView(imageView, 300, 300);
-            scrollView1.post(new Runnable() {
+            linearLayout.addView(imageView,300,300);
+            scrollView.post(new Runnable() {
                 @Override
                 public void run() {
                     scrollView.fullScroll(View.FOCUS_DOWN);
